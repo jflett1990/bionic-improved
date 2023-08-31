@@ -1,15 +1,13 @@
 {
-    "manifest_version": 3,
-    "name": "Bionic Reading Extension",
-    "version": "1.0",
-    "permissions": ["activeTab"],
-  
-    "content_scripts": [
-      {
-        "matches": ["<all_urls>"],
-        "js": ["content.js"]
-      }
-    ]
-  
-  }
-  
+  "manifest_version": 3,  
+  "name": "Bionic Reading",
+  "version": "1.0",  // Added missing version
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"], // Changed to match all URLs
+      "js": ["content.js"]
+    }
+  ]
+
+}
